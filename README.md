@@ -73,6 +73,7 @@ package bobsrockets{
 		}
 	}
 	package lunch{
+		//导入navigation包中的Navigator类
 		import navigation._
 		Object Vehicle{
 			private[lunch] val guide = new Navigator
