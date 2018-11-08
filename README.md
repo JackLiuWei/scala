@@ -60,3 +60,23 @@ package p{
 	}
 }
 ```
+### 4 作用域保护
+```javascript
+package bobsrockets{
+	package navigation{
+		private[bobsrockets] class Navigator{
+			protected[navigation] use starChart{}
+			class LegOfJourney{
+				private[navigator] val distance = 100;
+			}
+			private[this] var speed = 200;
+		}
+	}
+	package lunch{
+		import navigation._
+		Object Vehicle{
+			private[lunch] val guide = new Navigator
+		}
+	}
+}
+```
