@@ -85,12 +85,14 @@ package bobsrockets{
 ### 方法与函数
 ```javascript
 object add{
+	//传入必要的参数，并定义返回值类型
 	def addF(x:Int,y:Int):Int = {
 		var sum:Int=0
 		sum = x+y
 		return sum
 	}
 	def main(args:Array[String]){
+		//调用函数
 		println(addF(1000,240))
 	}
 }
