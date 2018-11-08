@@ -81,3 +81,17 @@ package bobsrockets{
 	}
 }
 ```
+
+### 方法与函数
+```javascript
+object add{
+	def addF(x:Int,y:Int):Int = {
+		var sum:Int=0
+		sum = x+y
+		return sum
+	}
+	def main(args:Array[String]){
+		println(addF(1000,240))
+	}
+}
+```
