@@ -1,4 +1,5 @@
-> object Test {
+###
+object Test {
 	val foo = """AAAAAA
 	www.runoob.com
 	www.w3cschool.cc
