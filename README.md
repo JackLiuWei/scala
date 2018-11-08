@@ -34,6 +34,7 @@ class Outer{
 		private def f(){
 			println("AAAAAAA")
 		}
+		//内部类可以直接访问
 		class InnerMost{
 			f()
 		}
