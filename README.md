@@ -42,3 +42,20 @@ class Outer{
 	//(new Inner).f()
 }
 ```
+### 3 protect访问控制符号
+```javascript
+package p{
+	class Super{
+		//protected修饰类方法
+		protected def f(){ println("AAAAAAAAAAAA")}
+	}
+	//子类可以访问
+	class Sub extends Super{
+		f()
+	}
+	//普通类无法直接在内部访问
+	class Other{
+		//(new Super).f()   //错误
+	}
+}
+```
