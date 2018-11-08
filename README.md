@@ -38,6 +38,7 @@ class Outer{
 			f()
 		}
 	}
+	//外部类不能访问私有属性
 	//(new Inner).f()
 }
 ```
