@@ -1,4 +1,5 @@
 # scala
+#### 1 变量
 ```javascript
 object Test {
 	val foo = """AAAAAA
@@ -24,5 +25,19 @@ object Test {
 	   println(constantValue);
 	   println(pa);
    }
+}
+```
+### 2 private访问控制符
+```javascript
+class Outer{
+	class Inner{
+		private def f(){
+			println("AAAAAAA")
+		}
+		class InnerMost{
+			f()
+		}
+	}
+	//(new Inner).f()
 }
 ```
